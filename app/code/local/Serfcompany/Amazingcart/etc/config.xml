@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>  <!-- -теги обязательно должны быть мальеними буквами иначе скрипт инстал не запустится-->
+        <Serfcompany_Amazingcart>
+            <version>0.0.1</version>
+        </Serfcompany_Amazingcart>
+    </modules>
+
+    <global>
+        <models>
+            <amazingcart>
+                <class>Serfcompany_Amazingcart_Model</class>
+            </amazingcart>
+        </models>
+        <helpers>
+            <amazingcart>
+                <class>Serfcompany_Amazingcart_Helper</class>
+            </amazingcart>
+        </helpers>
+    </global>
+
+    <frontend>
+
+        <routers>
+            <amazingcart>
+                <use>standard</use>
+                <args>
+                    <module>Serfcompany_Amazingcart</module>
+                    <frontName>amazingcart</frontName>
+                </args>
+            </amazingcart>
+        </routers>
+
+
+    </frontend>
+
+
+</config>
